@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "500 GRE Words",
+  "description": "This extension shows one of the top 500 GRE words whenever a new tab is opened",
+  "version": "1.0",
+
+  "chrome_url_overrides" : {
+    "newtab": "newTab.html"
+  },
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "500 GRE Words!"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
